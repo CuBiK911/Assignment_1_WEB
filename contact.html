@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - The Art of Tiramisu</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
     <header>
         <nav>
+            <h1 class="logo">Tiramisu<span>.</span></h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">History & Recipe</a></li>
@@ -16,52 +18,116 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <p>Interested in learning how to make authentic tiramisu? Book a workshop or ask us a question!</p>
-        
-        <form action="#" method="POST">
-            <fieldset>
-                <legend>Personal Information</legend>
-                
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Maria Rossi">
-                
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required placeholder="maria@example.com">
-                
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-            </fieldset>
 
-            <fieldset>
-                <legend>Workshop Preferences</legend>
-                
-                <label for="date">Preferred Date:</label>
-                <input type="date" id="date" name="date" min="2026-09-10">
-                
-                <label for="participants">Number of Participants:</label>
-                <input type="number" id="participants" name="participants" min="1" max="12">
-                
-                <p>Skill Level:</p>
-                <label><input type="radio" name="skill" value="beginner" required> Beginner </label>
-                <label><input type="radio" name="skill" value="intermediate"> Intermediate </label>
-                <label><input type="radio" name="skill" value="advanced"> Advanced </label>
-                
-                <label><input type="checkbox" name="newsletter" value="yes"> Subscribe to our dessert recipes newsletter</label>
-                
-                <label for="dietary">Dietary Restrictions:</label>
-                <input type="text" id="dietary" name="dietary" placeholder="e.g., gluten-free">
-                
-                <label for="message">Additional Message:</label>
-                <textarea id="message" name="message" rows="4" maxlength="500" placeholder="Tell us about your tiramisu interests..."></textarea>
-            </fieldset>
+    <main>
+        <section class="content-section">
+            <h2 class="title">Contact Us & Book a Workshop</h2>
+            <p>Interested in learning how to make authentic tiramisu? Check our workshop schedule below or fill out the form to book your spot!</p>
+
+            <!-- Data Table -->
+            <table class="styled-table">
+                <caption>Upcoming Tiramisu Workshop Schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Skill Level</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oct 15, 2026</td>
+                        <td>Main Kitchen, NYC</td>
+                        <td>Beginner</td>
+                        <td>$45.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 22, 2026</td>
+                        <td>Downtown Studio, NYC</td>
+                        <td>Intermediate</td>
+                        <td>$60.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 05, 2026</td>
+                        <td>Main Kitchen, NYC</td>
+                        <td>Advanced</td>
+                        <td>$75.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 12, 2026</td>
+                        <td>Online (Zoom)</td>
+                        <td>All Levels</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Group Discount (4+ people)</td>
+                        <td>Any Level</td>
+                        <td>20% Off</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Average Workshop Duration</td>
+                        <td>2.5 Hours</td>
+                    </tr>
+                </tfoot>
+            </table>
+
             
-            <button type="submit">Send Inquiry</button>
-        </form>
+            <form action="#" method="POST" class="styled-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Maria Rossi" />
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="maria@example.com" />
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Workshop Preferences</legend>
+                    
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" min="2026-10-01" />
+                    
+                    <label for="participants">Number of Participants:</label>
+                    <input type="number" id="participants" name="participants" min="1" max="12" />
+                    
+                    <p class="form-label-text">Skill Level:</p>
+                    <label><input type="radio" name="skill" value="beginner" required /> Beginner</label>
+                    <label><input type="radio" name="skill" value="intermediate" /> Intermediate</label>
+                    <label><input type="radio" name="skill" value="advanced" /> Advanced</label>
+                    
+                    <label><input type="checkbox" name="newsletter" value="yes" /> Subscribe to our dessert recipes newsletter</label>
+                    
+                    <label for="message">Additional Message:</label>
+                    <textarea id="message" name="message" rows="4" maxlength="500" placeholder="Tell us about your dietary restrictions or questions..."></textarea>
+                </fieldset>
+                
+                <button type="submit" class="main-btn">Send Inquiry</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 The Art of Tiramisu. All rights reserved.</p>
+        <hr class="footer-hr" />
+        <div class="footer-container">    
+            <div class="footer-col">
+                <h3>Contact <span>Us</span></h3>
+                <p>123 Dessert Lane, Sweet City<br />Email: hello@tiramisu.art</p>
+            </div>
+            <div class="footer-col">
+                <h3>Opening <span>Hours</span></h3>
+                <p>Mon - Fri: 8:00 AM - 8:00 PM<br />Sat - Sun: 9:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="copyright">Copyright &copy; 2026 The Art of Tiramisu | Crafted with care</p>
     </footer>
 </body>
 </html>

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Art of Tiramisu - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Art of Tiramisu</title>
+  
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+    
     <header>
         <nav>
+            <h1 class="logo">Tiramisu<span>.</span></h1>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">History & Recipe</a></li>
@@ -16,35 +20,85 @@
             </ul>
         </nav>
     </header>
+
+    
     <main>
-        <h1 id="unique-highlight">Welcome to The Art of Tiramisu</h1>
-        <section>
-            <h2>What is Tiramisu?</h2>
-            <p>Tiramisu is a beloved Italian dessert that translates to "pick me up" or "cheer me up" in Italian. This elegant layered dessert combines coffee-soaked ladyfingers with a rich mixture of eggs, sugar, mascarpone cheese, and cocoa powder. Originating from the Veneto region of Italy, tiramisu has become one of the world's most famous desserts, celebrated for its perfect balance of bitter coffee, sweet cream, and delicate cocoa.</p>
+        
+        <section class="hero">
+            <h1 id="unique-highlight">START YOUR DAY<br />WITH OUR TIRAMISU</h1>
+            <button class="main-btn">Order Now</button>
         </section>
-        <section>
-            <h2>Key Ingredients</h2>
-            <p>Authentic tiramisu requires high-quality ingredients to achieve its signature taste and texture.</p>
-            <ul>
-                <li>Mascarpone Cheese: Creamy Italian cheese that forms the base.</li>
-                <li>Ladyfingers (Savoiardi): Light, finger-shaped sponge biscuits.</li>
-                <li>Espresso Coffee: Strong coffee for soaking the ladyfingers.</li>
-                <li>Cocoa Powder: Dusting on top for bitterness and presentation.</li>
-            </ul>
-            <ol>
-                <li>Prepare strong espresso coffee and let it cool.</li>
-                <li>Whip egg yolks with sugar until creamy.</li>
-                <li>Fold in mascarpone cheese gently.</li>
-                <li>Whip egg whites to stiff peaks and fold into mixture.</li>
-            </ol>
+
+      
+        <section id="our-story">
+            <div class="section-content">
+                <div class="title-style">
+                    <span class="line"></span>
+                    <h2 class="title">Our Story</h2>
+                </div>
+                <p>
+                    Tiramisu is a beloved Italian dessert that translates to "pick me up." 
+                    Originating from the Veneto region, it combines coffee-soaked ladyfingers 
+                    with a rich, creamy mascarpone mixture, creating a perfect balance of flavors.
+                </p>
+                <ul class="feature-list">
+                    <li>Authentic Italian Mascarpone</li>
+                    <li>Freshly Brewed Espresso</li>
+                    <li>Premium Dutch Cocoa Powder</li>
+                </ul>
+                
+            </div>
+            <div class="img-container">
+                
+                <img src="images/tiramisu-layers.jpg" alt="Layers of classic tiramisu with rich cocoa powder dusting on top" />
+            </div>
         </section>
-        <section>
-            <img src="images/tiramisu-classic.jpg" alt="Classic tiramisu dessert with layers of cream and cocoa dusting in a glass dish">
-            <img src="images/tiramisu-ingredients.jpg" alt="Tiramisu ingredients arranged on marble: mascarpone, ladyfingers, coffee, eggs, and cocoa powder">
+
+        
+        <section class="products">
+            <h2 class="title title-three">Signature Product</h2>
+            
+            <div class="cards">
+              
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/tiramisu-classic.jpg" alt="Slice of classic tiramisu on a white plate" class="card-img" />
+                    </div>
+                    <div class="card-title">
+                        <h3>Classic Tiramisu</h3>
+                    </div>
+                    <ol class="items">
+                        <li>Espresso-soaked ladyfingers</li>
+                        <li>Whipped mascarpone cream</li>
+                        <li>Dusting of dark cocoa</li>
+                    </ol>
+                    
+                </div>
+
+              
+                
+
+               
+                
+            </div>
         </section>
     </main>
+
+    
     <footer>
-        <p>&copy; 2026 The Art of Tiramisu. All rights reserved.</p>
+        <hr class="footer-hr" />
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Contact <span>Us</span></h3>
+                <p>123 Dessert Lane, Sweet City<br />Email: hello@tiramisu.art</p>
+            </div>
+            <div class="footer-col">
+                <h3>Opening <span>Hours</span></h3>
+                <p>Mon - Fri: 8:00 AM - 8:00 PM<br />Sat - Sun: 9:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="copyright">Copyright &copy; 2026 The Art of Tiramisu | Crafted with care</p>
     </footer>
 </body>
 </html>

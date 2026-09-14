@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?famSily=Playfair+Display+SC:wght@700&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
   --main-color: #deab5f;          /* HEX */
@@ -28,7 +28,7 @@ body {
   text-align: center;
 }
 
-/* Navigation */
+
 header {
   background-color: rgba(16, 14, 15, 0.95);
   position: sticky;
@@ -71,14 +71,14 @@ nav a {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-/* CLEAN HOVER: No glow, just simple color/transform change */
+
 nav a:hover, nav a.active {
   color: var(--primary-bg);
   background-color: var(--main-color);
   transform: translateY(-2px);
 }
 
-/* Hero Section */
+
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/hero-bg.jpg");
   background-position: center;
@@ -106,7 +106,7 @@ nav a:hover, nav a.active {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* CLEAN BUTTON HOVER: No box-shadow glow */
+
 .main-btn:hover {
   background-color: transparent;
   color: var(--main-color);
@@ -139,7 +139,7 @@ main {
   margin-bottom: 3rem;
 }
 
-/* Image Size Limits (Strict) */
+
 img {
   max-width: 100%;
   max-height: 400px;
@@ -151,7 +151,7 @@ img {
   margin: 1.5rem auto;
 }
 
-/* Lists */
+
 .styled-list {
   list-style: none;
   margin: 1.5rem 0;
@@ -164,7 +164,7 @@ img {
   color: #ccc;
 }
 
-/* Blockquote */
+
 blockquote {
   background-color: var(--card-bg);
   border-left: 4px solid var(--main-color);
@@ -196,7 +196,7 @@ iframe {
   max-width: 100%;
 }
 
-/* Products Cards */
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +216,7 @@ iframe {
   margin-top: 3rem;
 }
 
-/* CLEAN CARD HOVER: No glow */
+
 .card:hover {
   transform: translateY(-10px);
   border-color: var(--accent-color);
@@ -272,15 +272,13 @@ iframe {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* CLEAN BUTTON HOVER: No glow */
+
 .card-btn:hover {
   background-color: var(--main-color);
   color: var(--primary-bg);
 }
 
-/* ==========================================
-   TASK 3: DATA TABLE STYLING
-   ========================================== */
+
 .styled-table {
   width: 100%;
   border-collapse: collapse;
@@ -319,9 +317,7 @@ iframe {
   color: var(--main-color);
 }
 
-/* ==========================================
-   TASK 3 & 4: CONTACT FORM STYLING
-   ========================================== */
+
 .styled-form {
   max-width: 600px;
   margin: 3rem auto;

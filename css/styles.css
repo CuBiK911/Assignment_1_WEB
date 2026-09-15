@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?famSily=Playfair+Display+SC:wght@700&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
-  --main-color: #deab5f;          /* HEX */
-  --primary-bg: rgb(16, 14, 15);  /* RGB */
-  --accent-color: hsl(40, 70%, 60%); /* HSL */
-  --text-light: white;            /* Name */
+  --main-color: #deab5f;          
+  --primary-bg: rgb(16, 14, 15);  
+  --accent-color: hsl(40, 70%, 60%); 
+  --text-light: white;          
   --card-bg: rgba(255, 255, 255, 0.05);
 }
 
@@ -371,7 +370,7 @@ iframe {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* TASK 4: Visible :focus state (CLEAN, NO GLOW) */
+
 .styled-form input:focus,
 .styled-form textarea:focus {
   outline: none;
